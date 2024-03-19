@@ -1,0 +1,125 @@
+@import url(light.css);
+
+body {
+    width: fit-content;
+    padding: 8px;
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    font-family: Arial;
+}
+
+#profile_pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+#name {
+    padding: 16px;
+    margin: 8px 16px 16px 8px;
+    background-color: var(--md-sys-color-tertiary-container);
+    border-radius: 28px;
+    text-align: center;
+}
+
+.surface_container {
+    width: fit-content;
+    height: fit-content;
+    padding: 16px;
+    margin: 8px;
+    background-color: var(--md-sys-color-surface);
+    border-radius: 28px;
+}
+
+.sidebar {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-flow: column;
+}
+
+.side_block {
+    background-color: var(--md-sys-color-surface-container-low);
+    border-radius: 16px;
+    margin-top: 16px;
+}
+
+.side_block > h4 {
+    margin: 0;
+    padding: 16px;
+    background-color: var(--md-sys-color-secondary-container);
+    border-radius: 16px 16px 0px 0px;
+}
+
+.side_block > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+}
+
+.side_block > ul > li {
+    padding: 8px;
+}
+
+@media screen and (max-width: 700px) {
+
+    body {
+        flex-flow: column;
+    }
+
+    .sidebar {
+        width: auto;
+        height: auto;
+        flex-flow: wrap;
+        padding: 8px;
+    }
+
+    #profile_pic {
+        min-width: 180px;
+        height: auto;
+        flex: 1 1 0px;
+        margin: 8px;
+    }
+
+    .side_block {
+        flex: 1 1 0px;
+        min-width: 180px;
+        margin-top: 0px;
+        margin: 8px;
+    }
+}
+
+#main_block {
+    padding-top: 0.05px;
+}
+
+.info_section > h2 {
+    margin: 0;
+    margin-top: 16px;
+    padding: 16px;
+    background-color: var(--md-sys-color-secondary-container);
+    border-radius: 16px;
+}
+
+.info_section > article {
+    margin-top: 16px;
+    padding: 16px;
+    background-color: var(--md-sys-color-surface-container-low);
+    border-radius: 16px;
+}
+
+.info_section > article:first-child {
+    margin-top: 0px;
+}
+
+.info_section > article > h3 {
+    margin: 0;
+}
+
+.info_section > article > ul {
+    margin: 0;
+    padding: 16px;
+    padding-bottom: 0px;
+}
